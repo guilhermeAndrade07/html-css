@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico-G.png" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1> Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e dimunua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <!--Sempre manter a padrão primeiro e acima dela ir colocando em ordem ao tamanho que for diminuindo-->
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <!--Formatos Compativéis- MP3 WAV OGG-->
+    <audio preload="auto" autoplay controls>
+        <source src="midia/Two Hearts.mp3" type="audio/mpeg">
+        <source src="midia/Two Hearts.ogg" type="audio/ogg">
+        <source src="midia/Two Hearts.wav" type="audio/wav">
+    </audio>
+    <!--Exemplos dos outros tipos acima-->
+    <p>Infelizmente seu navegador não consegue reproduzir a música. <a href="midia/Two Hearts.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+
+
+</body>
+</html>
