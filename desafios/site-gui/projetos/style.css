@@ -75,6 +75,30 @@ nav {
     color: var(--cor4);
  }
 
+ main p {
+    padding: 20px;
+    text-align: center;
+
+}
+
+ main p > img {
+    height: 40px;
+    width: 40px;
+    padding-top: 20px;
+ }
+
+ main p > a {
+    text-decoration: none;
+    color: var(--cor4);
+    padding: 10px;
+    font-size: 20px;
+ }
+
+ main p > a:hover {
+    text-decoration: underline;
+    font-size: 1.1em;
+ }
+
  footer {
     background-color: var(--cor5);
     color: white;
