@@ -14,6 +14,7 @@ header {
     background-color: rgb(255, 59, 59);
     padding: 30px;
     text-align: center;
+    text-shadow: 2px 5px 8px black;
 }
 
 main h2{
@@ -21,7 +22,30 @@ main h2{
     text-align: center;
 }
 
-
 main p {
     display: inline-block;
+}
+
+main a {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+main a:hover {
+    font-size: 2em;
+}
+
+.pergunta{
+    text-align: center;
+    padding: 40px;
+    margin: 10px;
+}
+
+.espaco{
+    padding-left: 10px;
+    padding-right: 20px;
 }
