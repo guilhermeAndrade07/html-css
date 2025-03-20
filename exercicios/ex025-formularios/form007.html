@@ -4,11 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: lightgreen;
+        }
+
+        form {
+            padding: 10px;
+        }
+
+        .flex {
+            padding: 3px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .botão {
+            padding: 15px;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
-        <p>
+        <p class="flex">
             <label for="iest">Estado: </label>
             <select name="estado" id="iest">
                 <option value="" selected> --- Escolha ---</option>
@@ -17,7 +48,7 @@
                     <option value="Rj">Rio de Janeiro</option>
                     <option value="Mg">Minas Gerais</option>
                 </optgroup>
-                
+
                 <optgroup label="Região Nordeste">
                     <option value="Ma">Maranhão</option>
                     <option value="Pe">Pernanbuco</option>
@@ -26,7 +57,7 @@
             </select>
         </p>
         
-        <p>
+        <p class="flex">
             <label for="iprof">Profissão: </label>
             <input type="text" name="prof" id="iprof" list="lstprof">
             <datalist id="lstprof">
@@ -37,12 +68,12 @@
             </datalist>
         </p>
         
-        <p>
+        <p class="flex"> 
             <label for="imsg">Mensagem: </label> <br>
             <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
         </p>
         
-        <p>
+        <p class="botão">
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
