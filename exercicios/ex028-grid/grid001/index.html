@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid layout</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            background-color: rgba(0, 128, 0, 0.534);
+        }
+
+        div.container{
+            background-color: white;
+            margin: 10px;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: 30px 30px 30px;
+            grid-gap: 10px;
+        }
+
+        .item{
+            border: 1px solid black;
+            margin: 5px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
 </body>
 </html>
